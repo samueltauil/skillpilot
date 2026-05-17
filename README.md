@@ -7,7 +7,7 @@
 > Discover, browse, and install GitHub Copilot skills for your projects.
 
 [![Website](https://img.shields.io/badge/Website-Live-success?logo=github)](https://skillshub.space)
-[![Skills Count](https://img.shields.io/badge/Skills-377-blue)](./site/src/data/skills.json)
+[![Skills Count](https://img.shields.io/badge/Skills-393-blue)](./site/src/data/skills.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What is this?
@@ -33,14 +33,14 @@ Or explore the [skills registry](./skills/registry.json) directly.
 
 | Category | Skills | Description |
 |----------|:------:|-------------|
-| ✨ Code Quality | 94 | Reviews, refactoring, linting |
-| 📝 Documentation | 56 | READMEs, PRDs, technical writing |
-| 🔀 Git & Version Control | 49 | Commits, branching, GitHub operations |
-| 🎨 Frontend & UI | 51 | React, Vue, components, design |
-| 🔌 API & Backend | 43 | REST APIs, GraphQL, databases |
-| 🧪 Testing | 35 | Unit tests, E2E, test automation |
-| 🚀 DevOps & CI/CD | 27 | Pipelines, Docker, Kubernetes |
-| 🔧 MCP Development | 6 | Model Context Protocol servers and apps |
+| ✨ Code Quality | 96 | Reviews, refactoring, linting |
+| 📝 Documentation | 58 | READMEs, PRDs, technical writing |
+| 🔀 Git & Version Control | 53 | Commits, branching, GitHub operations |
+| 🎨 Frontend & UI | 54 | React, Vue, components, design |
+| 🔌 API & Backend | 44 | REST APIs, GraphQL, databases |
+| 🧪 Testing | 37 | Unit tests, E2E, test automation |
+| 🚀 DevOps & CI/CD | 30 | Pipelines, Docker, Kubernetes |
+| 🔧 MCP Development | 5 | Model Context Protocol servers and apps |
 | 📊 Diagrams | 10 | Mermaid, PlantUML, visualizations |
 | 🔒 Security | 2 | Audits, vulnerabilities, secure coding |
 | 📈 Data & Analytics | 4 | SQL, data pipelines, visualization |
