@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "lastUpdated": "2026-02-05T12:00:00Z",
+  "lastUpdated": "2026-05-25T14:09:02Z",
   "categories": [
     {
       "id": "git-version-control",
@@ -1125,6 +1125,26 @@
       },
       "featured": true,
       "tags": ["artifacts", "html", "claude", "web", "interactive"]
+    },
+    {
+      "id": "vue-apollo",
+      "name": "Vue Apollo Best Practices",
+      "description": "Complete guide for Vue 3 + GraphQL using @vue/apollo-composable v4.x and Apollo Client v3. Covers useQuery, useMutation, subscriptions, WebSocket setup, local state (@client), components API, pagination, caching, and Codegen integration.",
+      "shortDescription": "Vue 3 + GraphQL best practices with Apollo",
+      "category": "api-backend",
+      "author": "dmytro-balytskyi",
+      "license": "MIT",
+      "triggers": [
+        "vue apollo graphql",
+        "useQuery",
+        "useMutation",
+        "apollo client"
+      ],
+      "complexity": "intermediate",
+      "source": {
+        "repo": "https://github.com/dmytro-balytskyi/skills",
+        "path": "skills/vue-apollo/SKILL.md"
+      }
     }
   ]
 }
