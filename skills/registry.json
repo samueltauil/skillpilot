@@ -1125,6 +1125,21 @@
       },
       "featured": true,
       "tags": ["artifacts", "html", "claude", "web", "interactive"]
+    },
+    {
+      "id": "mailtrap-email-integration",
+      "name": "Mailtrap Email Integration",
+      "description": "Patterns for integrating transactional email sending using Mailtrap's Email API and Sandbox. Covers sandbox vs production separation, API authentication, sending domain verification (SPF/DKIM/DMARC), and contacts management. Use when implementing email-sending features or debugging delivery issues.",
+      "shortDescription": "Transactional email via Mailtrap API with sandbox testing and domain setup",
+      "category": "api-backend",
+      "author": "mailtrap",
+      "license": "Not specified",
+      "triggers": ["email", "mailtrap", "transactional email", "smtp", "email api", "sandbox testing", "domain verification", "spf", "dkim"],
+      "complexity": "intermediate",
+      "source": {
+        "repo": "https://github.com/mailtrap/mailtrap-skills",
+        "path": "skills/sending-emails/SKILL.md"
     }
+}
   ]
 }
