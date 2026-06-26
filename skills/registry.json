@@ -6,73 +6,73 @@
       "id": "git-version-control",
       "name": "Git & Version Control",
       "description": "Skills for git workflows, commits, branching, and GitHub operations",
-      "icon": "🔀"
+      "icon": "\ud83d\udd00"
     },
     {
       "id": "code-quality",
       "name": "Code Quality & Refactoring",
       "description": "Skills for code reviews, refactoring, linting, and best practices",
-      "icon": "✨"
+      "icon": "\u2728"
     },
     {
       "id": "documentation",
       "name": "Documentation",
       "description": "Skills for writing docs, READMEs, PRDs, and technical writing",
-      "icon": "📝"
+      "icon": "\ud83d\udcdd"
     },
     {
       "id": "diagrams",
       "name": "Diagrams & Visualization",
       "description": "Skills for creating Mermaid, PlantUML, Excalidraw diagrams",
-      "icon": "📊"
+      "icon": "\ud83d\udcca"
     },
     {
       "id": "testing",
       "name": "Testing",
       "description": "Skills for unit tests, integration tests, E2E, and test automation",
-      "icon": "🧪"
+      "icon": "\ud83e\uddea"
     },
     {
       "id": "api-backend",
       "name": "API & Backend",
       "description": "Skills for REST APIs, GraphQL, databases, and backend development",
-      "icon": "🔌"
+      "icon": "\ud83d\udd0c"
     },
     {
       "id": "frontend-ui",
       "name": "Frontend & UI",
       "description": "Skills for React, Vue, CSS, components, and web design",
-      "icon": "🎨"
+      "icon": "\ud83c\udfa8"
     },
     {
       "id": "devops-cicd",
       "name": "DevOps & CI/CD",
       "description": "Skills for pipelines, Docker, Kubernetes, Terraform, and deployments",
-      "icon": "🚀"
+      "icon": "\ud83d\ude80"
     },
     {
       "id": "security",
       "name": "Security",
       "description": "Skills for security audits, vulnerability scanning, and secure coding",
-      "icon": "🔒"
+      "icon": "\ud83d\udd12"
     },
     {
       "id": "data-analytics",
       "name": "Data & Analytics",
       "description": "Skills for data pipelines, SQL, Power BI, and data analysis",
-      "icon": "📈"
+      "icon": "\ud83d\udcc8"
     },
     {
       "id": "office-documents",
       "name": "Office Documents",
       "description": "Skills for creating and editing Word, Excel, PowerPoint, and PDF files",
-      "icon": "📄"
+      "icon": "\ud83d\udcc4"
     },
     {
       "id": "mcp-development",
       "name": "MCP Development",
       "description": "Skills for building Model Context Protocol servers and apps",
-      "icon": "🔧"
+      "icon": "\ud83d\udd27"
     }
   ],
   "skills": [
@@ -84,9 +84,19 @@
       "category": "git-version-control",
       "author": "github",
       "license": "MIT",
-      "triggers": ["commit", "git commit", "commit message", "conventional commit", "/commit"],
+      "triggers": [
+        "commit",
+        "git commit",
+        "commit message",
+        "conventional commit",
+        "/commit"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -95,7 +105,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["git", "commits", "semantic", "changelog", "conventional-commits"]
+      "tags": [
+        "git",
+        "commits",
+        "semantic",
+        "changelog",
+        "conventional-commits"
+      ]
     },
     {
       "id": "refactor",
@@ -105,9 +121,18 @@
       "category": "code-quality",
       "author": "github",
       "license": "MIT",
-      "triggers": ["refactor", "refactoring", "clean code", "improve code"],
+      "triggers": [
+        "refactor",
+        "refactoring",
+        "clean code",
+        "improve code"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -116,7 +141,12 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["refactor", "clean-code", "quality", "maintainability"]
+      "tags": [
+        "refactor",
+        "clean-code",
+        "quality",
+        "maintainability"
+      ]
     },
     {
       "id": "prd",
@@ -126,9 +156,19 @@
       "category": "documentation",
       "author": "github",
       "license": "MIT",
-      "triggers": ["prd", "requirements", "product requirements", "spec", "specification"],
+      "triggers": [
+        "prd",
+        "requirements",
+        "product requirements",
+        "spec",
+        "specification"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -137,7 +177,12 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["documentation", "prd", "requirements", "product"]
+      "tags": [
+        "documentation",
+        "prd",
+        "requirements",
+        "product"
+      ]
     },
     {
       "id": "excalidraw-diagram-generator",
@@ -147,9 +192,19 @@
       "category": "diagrams",
       "author": "github",
       "license": "MIT",
-      "triggers": ["excalidraw", "diagram", "flowchart", "architecture diagram", "visualize"],
+      "triggers": [
+        "excalidraw",
+        "diagram",
+        "flowchart",
+        "architecture diagram",
+        "visualize"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -158,7 +213,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["diagrams", "excalidraw", "flowchart", "visualization", "architecture"]
+      "tags": [
+        "diagrams",
+        "excalidraw",
+        "flowchart",
+        "visualization",
+        "architecture"
+      ]
     },
     {
       "id": "plantuml-ascii",
@@ -168,9 +229,19 @@
       "category": "diagrams",
       "author": "github",
       "license": "MIT",
-      "triggers": ["plantuml", "uml", "sequence diagram", "class diagram", "ascii diagram"],
+      "triggers": [
+        "plantuml",
+        "uml",
+        "sequence diagram",
+        "class diagram",
+        "ascii diagram"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -179,7 +250,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["diagrams", "plantuml", "uml", "ascii", "sequence"]
+      "tags": [
+        "diagrams",
+        "plantuml",
+        "uml",
+        "ascii",
+        "sequence"
+      ]
     },
     {
       "id": "gh-cli",
@@ -189,9 +266,19 @@
       "category": "git-version-control",
       "author": "github",
       "license": "MIT",
-      "triggers": ["gh", "github cli", "gh pr", "gh issue", "github command"],
+      "triggers": [
+        "gh",
+        "github cli",
+        "gh pr",
+        "gh issue",
+        "github command"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -200,7 +287,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["github", "cli", "gh", "pull-request", "issues"]
+      "tags": [
+        "github",
+        "cli",
+        "gh",
+        "pull-request",
+        "issues"
+      ]
     },
     {
       "id": "github-issues",
@@ -210,9 +303,19 @@
       "category": "git-version-control",
       "author": "github",
       "license": "MIT",
-      "triggers": ["issue", "github issue", "create issue", "bug report", "feature request"],
+      "triggers": [
+        "issue",
+        "github issue",
+        "create issue",
+        "bug report",
+        "feature request"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -221,7 +324,12 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["github", "issues", "tracking", "project-management"]
+      "tags": [
+        "github",
+        "issues",
+        "tracking",
+        "project-management"
+      ]
     },
     {
       "id": "azure-static-web-apps",
@@ -231,9 +339,18 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["azure static web app", "swa", "static site", "azure deploy"],
+      "triggers": [
+        "azure static web app",
+        "swa",
+        "static site",
+        "azure deploy"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -242,7 +359,12 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["azure", "static-web-apps", "deployment", "cloud"]
+      "tags": [
+        "azure",
+        "static-web-apps",
+        "deployment",
+        "cloud"
+      ]
     },
     {
       "id": "azure-devops-cli",
@@ -252,9 +374,18 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["azure devops", "az devops", "ado", "azure pipelines"],
+      "triggers": [
+        "azure devops",
+        "az devops",
+        "ado",
+        "azure pipelines"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -263,7 +394,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["azure", "devops", "cli", "pipelines", "ado"]
+      "tags": [
+        "azure",
+        "devops",
+        "cli",
+        "pipelines",
+        "ado"
+      ]
     },
     {
       "id": "copilot-sdk",
@@ -273,9 +410,18 @@
       "category": "api-backend",
       "author": "github",
       "license": "MIT",
-      "triggers": ["copilot sdk", "copilot api", "ai application", "copilot integration"],
+      "triggers": [
+        "copilot sdk",
+        "copilot api",
+        "ai application",
+        "copilot integration"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -284,7 +430,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["copilot", "sdk", "api", "ai", "integration"]
+      "tags": [
+        "copilot",
+        "sdk",
+        "api",
+        "ai",
+        "integration"
+      ]
     },
     {
       "id": "meeting-minutes",
@@ -294,9 +446,18 @@
       "category": "documentation",
       "author": "github",
       "license": "MIT",
-      "triggers": ["meeting minutes", "meeting notes", "action items", "meeting summary"],
+      "triggers": [
+        "meeting minutes",
+        "meeting notes",
+        "action items",
+        "meeting summary"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -305,7 +466,12 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["meeting", "minutes", "documentation", "notes"]
+      "tags": [
+        "meeting",
+        "minutes",
+        "documentation",
+        "notes"
+      ]
     },
     {
       "id": "agentic-eval",
@@ -315,9 +481,18 @@
       "category": "testing",
       "author": "github",
       "license": "MIT",
-      "triggers": ["agent evaluation", "ai testing", "agent metrics", "eval"],
+      "triggers": [
+        "agent evaluation",
+        "ai testing",
+        "agent metrics",
+        "eval"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -326,7 +501,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["agent", "evaluation", "testing", "ai", "metrics"]
+      "tags": [
+        "agent",
+        "evaluation",
+        "testing",
+        "ai",
+        "metrics"
+      ]
     },
     {
       "id": "mcp-builder",
@@ -336,9 +517,18 @@
       "category": "mcp-development",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["mcp server", "model context protocol", "llm integration", "tool server"],
+      "triggers": [
+        "mcp server",
+        "model context protocol",
+        "llm integration",
+        "tool server"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -347,7 +537,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["mcp", "server", "llm", "api", "integration"]
+      "tags": [
+        "mcp",
+        "server",
+        "llm",
+        "api",
+        "integration"
+      ]
     },
     {
       "id": "frontend-design",
@@ -357,9 +553,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["frontend design", "ui design", "web design", "responsive", "accessibility"],
+      "triggers": [
+        "frontend design",
+        "ui design",
+        "web design",
+        "responsive",
+        "accessibility"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -368,7 +574,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["frontend", "design", "ui", "ux", "responsive"]
+      "tags": [
+        "frontend",
+        "design",
+        "ui",
+        "ux",
+        "responsive"
+      ]
     },
     {
       "id": "canvas-design",
@@ -378,9 +590,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["canvas", "graphics", "animation", "html5 canvas", "visualization"],
+      "triggers": [
+        "canvas",
+        "graphics",
+        "animation",
+        "html5 canvas",
+        "visualization"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -389,7 +611,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["canvas", "graphics", "animation", "html5", "visualization"]
+      "tags": [
+        "canvas",
+        "graphics",
+        "animation",
+        "html5",
+        "visualization"
+      ]
     },
     {
       "id": "webapp-testing",
@@ -399,9 +627,18 @@
       "category": "testing",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["webapp testing", "e2e testing", "integration test", "test automation"],
+      "triggers": [
+        "webapp testing",
+        "e2e testing",
+        "integration test",
+        "test automation"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -410,7 +647,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["testing", "webapp", "e2e", "automation", "qa"]
+      "tags": [
+        "testing",
+        "webapp",
+        "e2e",
+        "automation",
+        "qa"
+      ]
     },
     {
       "id": "skill-creator",
@@ -420,9 +663,18 @@
       "category": "mcp-development",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["create skill", "skill template", "agent skill", "new skill"],
+      "triggers": [
+        "create skill",
+        "skill template",
+        "agent skill",
+        "new skill"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -431,7 +683,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["skill", "template", "agent", "creation", "meta"]
+      "tags": [
+        "skill",
+        "template",
+        "agent",
+        "creation",
+        "meta"
+      ]
     },
     {
       "id": "create-mcp-app",
@@ -441,9 +699,19 @@
       "category": "mcp-development",
       "author": "modelcontextprotocol",
       "license": "MIT",
-      "triggers": ["create mcp app", "mcp ui", "mcp view", "scaffold mcp app", "interactive mcp"],
+      "triggers": [
+        "create mcp app",
+        "mcp ui",
+        "mcp view",
+        "scaffold mcp app",
+        "interactive mcp"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/modelcontextprotocol/ext-apps",
         "repoName": "modelcontextprotocol/ext-apps",
@@ -452,7 +720,14 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["mcp", "app", "ui", "interactive", "react", "claude-desktop"]
+      "tags": [
+        "mcp",
+        "app",
+        "ui",
+        "interactive",
+        "react",
+        "claude-desktop"
+      ]
     },
     {
       "id": "appinsights-instrumentation",
@@ -462,9 +737,19 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["app insights", "application insights", "telemetry", "azure monitoring", "instrumentation"],
+      "triggers": [
+        "app insights",
+        "application insights",
+        "telemetry",
+        "azure monitoring",
+        "instrumentation"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -473,7 +758,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["azure", "app-insights", "telemetry", "monitoring", "observability"]
+      "tags": [
+        "azure",
+        "app-insights",
+        "telemetry",
+        "monitoring",
+        "observability"
+      ]
     },
     {
       "id": "azure-deployment-preflight",
@@ -483,9 +774,18 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["bicep validation", "deployment preflight", "azure deploy check", "validate bicep"],
+      "triggers": [
+        "bicep validation",
+        "deployment preflight",
+        "azure deploy check",
+        "validate bicep"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -494,7 +794,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["azure", "bicep", "deployment", "validation", "preflight"]
+      "tags": [
+        "azure",
+        "bicep",
+        "deployment",
+        "validation",
+        "preflight"
+      ]
     },
     {
       "id": "azure-resource-visualizer",
@@ -504,9 +810,18 @@
       "category": "diagrams",
       "author": "github",
       "license": "MIT",
-      "triggers": ["azure diagram", "resource visualizer", "azure architecture", "mermaid azure"],
+      "triggers": [
+        "azure diagram",
+        "resource visualizer",
+        "azure architecture",
+        "mermaid azure"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -515,7 +830,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["azure", "mermaid", "diagrams", "architecture", "visualization"]
+      "tags": [
+        "azure",
+        "mermaid",
+        "diagrams",
+        "architecture",
+        "visualization"
+      ]
     },
     {
       "id": "azure-role-selector",
@@ -525,9 +846,19 @@
       "category": "security",
       "author": "github",
       "license": "MIT",
-      "triggers": ["azure role", "rbac", "role assignment", "azure permissions", "least privilege"],
+      "triggers": [
+        "azure role",
+        "rbac",
+        "role assignment",
+        "azure permissions",
+        "least privilege"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -536,7 +867,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["azure", "rbac", "security", "roles", "permissions"]
+      "tags": [
+        "azure",
+        "rbac",
+        "security",
+        "roles",
+        "permissions"
+      ]
     },
     {
       "id": "chrome-devtools",
@@ -546,9 +883,19 @@
       "category": "testing",
       "author": "github",
       "license": "MIT",
-      "triggers": ["chrome devtools", "browser debugging", "dom inspection", "network monitoring", "performance profiling"],
+      "triggers": [
+        "chrome devtools",
+        "browser debugging",
+        "dom inspection",
+        "network monitoring",
+        "performance profiling"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -557,7 +904,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["chrome", "devtools", "debugging", "browser", "automation"]
+      "tags": [
+        "chrome",
+        "devtools",
+        "debugging",
+        "browser",
+        "automation"
+      ]
     },
     {
       "id": "image-manipulation-image-magick",
@@ -567,9 +920,19 @@
       "category": "frontend-ui",
       "author": "github",
       "license": "MIT",
-      "triggers": ["imagemagick", "image manipulation", "resize image", "convert image", "image processing"],
+      "triggers": [
+        "imagemagick",
+        "image manipulation",
+        "resize image",
+        "convert image",
+        "image processing"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -578,7 +941,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["imagemagick", "image", "manipulation", "graphics", "processing"]
+      "tags": [
+        "imagemagick",
+        "image",
+        "manipulation",
+        "graphics",
+        "processing"
+      ]
     },
     {
       "id": "legacy-circuit-mockups",
@@ -588,9 +957,19 @@
       "category": "diagrams",
       "author": "github",
       "license": "MIT",
-      "triggers": ["circuit diagram", "breadboard", "electronics", "circuit mockup", "hardware diagram"],
+      "triggers": [
+        "circuit diagram",
+        "breadboard",
+        "electronics",
+        "circuit mockup",
+        "hardware diagram"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -599,7 +978,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["circuit", "breadboard", "electronics", "canvas", "diagrams"]
+      "tags": [
+        "circuit",
+        "breadboard",
+        "electronics",
+        "canvas",
+        "diagrams"
+      ]
     },
     {
       "id": "make-repo-contribution",
@@ -609,9 +994,19 @@
       "category": "git-version-control",
       "author": "github",
       "license": "MIT",
-      "triggers": ["contribution", "contributing", "repo guidelines", "code standards", "pull request"],
+      "triggers": [
+        "contribution",
+        "contributing",
+        "repo guidelines",
+        "code standards",
+        "pull request"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -620,7 +1015,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["contribution", "guidelines", "git", "standards", "pr"]
+      "tags": [
+        "contribution",
+        "guidelines",
+        "git",
+        "standards",
+        "pr"
+      ]
     },
     {
       "id": "make-skill-template",
@@ -630,9 +1031,19 @@
       "category": "mcp-development",
       "author": "github",
       "license": "MIT",
-      "triggers": ["skill template", "create skill", "copilot skill", "agent skill", "skill generator"],
+      "triggers": [
+        "skill template",
+        "create skill",
+        "copilot skill",
+        "agent skill",
+        "skill generator"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -641,7 +1052,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["skill", "template", "copilot", "agent", "generator"]
+      "tags": [
+        "skill",
+        "template",
+        "copilot",
+        "agent",
+        "generator"
+      ]
     },
     {
       "id": "markdown-to-html",
@@ -651,9 +1068,18 @@
       "category": "documentation",
       "author": "github",
       "license": "MIT",
-      "triggers": ["markdown to html", "md to html", "convert markdown", "markdown converter"],
+      "triggers": [
+        "markdown to html",
+        "md to html",
+        "convert markdown",
+        "markdown converter"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -662,7 +1088,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["markdown", "html", "conversion", "documentation", "converter"]
+      "tags": [
+        "markdown",
+        "html",
+        "conversion",
+        "documentation",
+        "converter"
+      ]
     },
     {
       "id": "mcp-cli",
@@ -672,9 +1104,18 @@
       "category": "mcp-development",
       "author": "github",
       "license": "MIT",
-      "triggers": ["mcp cli", "mcp command line", "mcp interface", "mcp testing"],
+      "triggers": [
+        "mcp cli",
+        "mcp command line",
+        "mcp interface",
+        "mcp testing"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -683,7 +1124,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["mcp", "cli", "command-line", "testing", "automation"]
+      "tags": [
+        "mcp",
+        "cli",
+        "command-line",
+        "testing",
+        "automation"
+      ]
     },
     {
       "id": "microsoft-code-reference",
@@ -693,9 +1140,19 @@
       "category": "documentation",
       "author": "github",
       "license": "MIT",
-      "triggers": ["microsoft api", "microsoft docs", "sdk reference", "azure api", "dotnet reference"],
+      "triggers": [
+        "microsoft api",
+        "microsoft docs",
+        "sdk reference",
+        "azure api",
+        "dotnet reference"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -704,7 +1161,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["microsoft", "api", "reference", "documentation", "sdk"]
+      "tags": [
+        "microsoft",
+        "api",
+        "reference",
+        "documentation",
+        "sdk"
+      ]
     },
     {
       "id": "microsoft-docs",
@@ -714,9 +1177,19 @@
       "category": "documentation",
       "author": "github",
       "license": "MIT",
-      "triggers": ["microsoft docs", "microsoft learn", "azure docs", "dotnet docs", "ms docs"],
+      "triggers": [
+        "microsoft docs",
+        "microsoft learn",
+        "azure docs",
+        "dotnet docs",
+        "ms docs"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -725,7 +1198,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["microsoft", "documentation", "learn", "tutorials", "azure"]
+      "tags": [
+        "microsoft",
+        "documentation",
+        "learn",
+        "tutorials",
+        "azure"
+      ]
     },
     {
       "id": "nuget-manager",
@@ -735,9 +1214,19 @@
       "category": "api-backend",
       "author": "github",
       "license": "MIT",
-      "triggers": ["nuget", "nuget package", "dotnet package", "package manager", "nuget install"],
+      "triggers": [
+        "nuget",
+        "nuget package",
+        "dotnet package",
+        "package manager",
+        "nuget install"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -746,7 +1235,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["nuget", "dotnet", "packages", "dependencies", "csharp"]
+      "tags": [
+        "nuget",
+        "dotnet",
+        "packages",
+        "dependencies",
+        "csharp"
+      ]
     },
     {
       "id": "penpot-uiux-design",
@@ -756,9 +1251,19 @@
       "category": "frontend-ui",
       "author": "github",
       "license": "MIT",
-      "triggers": ["penpot", "ui design", "ux design", "prototype", "figma alternative"],
+      "triggers": [
+        "penpot",
+        "ui design",
+        "ux design",
+        "prototype",
+        "figma alternative"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -767,7 +1272,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["penpot", "ui", "ux", "design", "prototype"]
+      "tags": [
+        "penpot",
+        "ui",
+        "ux",
+        "design",
+        "prototype"
+      ]
     },
     {
       "id": "powerbi-modeling",
@@ -777,9 +1288,19 @@
       "category": "data-analytics",
       "author": "github",
       "license": "MIT",
-      "triggers": ["power bi", "powerbi", "dax", "data model", "semantic model"],
+      "triggers": [
+        "power bi",
+        "powerbi",
+        "dax",
+        "data model",
+        "semantic model"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -788,7 +1309,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["powerbi", "dax", "data-modeling", "analytics", "business-intelligence"]
+      "tags": [
+        "powerbi",
+        "dax",
+        "data-modeling",
+        "analytics",
+        "business-intelligence"
+      ]
     },
     {
       "id": "scoutqa-test",
@@ -798,9 +1325,19 @@
       "category": "testing",
       "author": "github",
       "license": "MIT",
-      "triggers": ["scoutqa", "exploratory testing", "qa test", "website testing", "automated qa"],
+      "triggers": [
+        "scoutqa",
+        "exploratory testing",
+        "qa test",
+        "website testing",
+        "automated qa"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -809,7 +1346,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["scoutqa", "testing", "qa", "exploratory", "automation"]
+      "tags": [
+        "scoutqa",
+        "testing",
+        "qa",
+        "exploratory",
+        "automation"
+      ]
     },
     {
       "id": "snowflake-semanticview",
@@ -819,9 +1362,19 @@
       "category": "data-analytics",
       "author": "github",
       "license": "MIT",
-      "triggers": ["snowflake", "semantic view", "data warehouse", "snowflake cli", "analytics"],
+      "triggers": [
+        "snowflake",
+        "semantic view",
+        "data warehouse",
+        "snowflake cli",
+        "analytics"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -830,7 +1383,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["snowflake", "semantic", "data-warehouse", "analytics", "sql"]
+      "tags": [
+        "snowflake",
+        "semantic",
+        "data-warehouse",
+        "analytics",
+        "sql"
+      ]
     },
     {
       "id": "terraform-azurerm-set-diff-analyzer",
@@ -840,9 +1399,19 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["terraform diff", "azurerm", "terraform plan", "infrastructure diff", "terraform analyze"],
+      "triggers": [
+        "terraform diff",
+        "azurerm",
+        "terraform plan",
+        "infrastructure diff",
+        "terraform analyze"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -851,7 +1420,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["terraform", "azurerm", "diff", "plan", "infrastructure"]
+      "tags": [
+        "terraform",
+        "azurerm",
+        "diff",
+        "plan",
+        "infrastructure"
+      ]
     },
     {
       "id": "vscode-ext-commands",
@@ -861,9 +1436,19 @@
       "category": "code-quality",
       "author": "github",
       "license": "MIT",
-      "triggers": ["vscode commands", "extension commands", "keybinding", "command palette", "vscode extension"],
+      "triggers": [
+        "vscode commands",
+        "extension commands",
+        "keybinding",
+        "command palette",
+        "vscode extension"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -872,7 +1457,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["vscode", "extension", "commands", "development", "guidelines"]
+      "tags": [
+        "vscode",
+        "extension",
+        "commands",
+        "development",
+        "guidelines"
+      ]
     },
     {
       "id": "vscode-ext-localization",
@@ -882,9 +1473,19 @@
       "category": "code-quality",
       "author": "github",
       "license": "MIT",
-      "triggers": ["vscode localization", "i18n", "extension translation", "internationalization", "l10n"],
+      "triggers": [
+        "vscode localization",
+        "i18n",
+        "extension translation",
+        "internationalization",
+        "l10n"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -893,7 +1494,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["vscode", "localization", "i18n", "translation", "extension"]
+      "tags": [
+        "vscode",
+        "localization",
+        "i18n",
+        "translation",
+        "extension"
+      ]
     },
     {
       "id": "web-design-reviewer",
@@ -903,9 +1510,19 @@
       "category": "frontend-ui",
       "author": "github",
       "license": "MIT",
-      "triggers": ["design review", "visual inspection", "website review", "ui review", "design feedback"],
+      "triggers": [
+        "design review",
+        "visual inspection",
+        "website review",
+        "ui review",
+        "design feedback"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -914,7 +1531,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["design", "review", "visual", "inspection", "ui"]
+      "tags": [
+        "design",
+        "review",
+        "visual",
+        "inspection",
+        "ui"
+      ]
     },
     {
       "id": "webapp-testing-playwright",
@@ -924,9 +1547,19 @@
       "category": "testing",
       "author": "github",
       "license": "MIT",
-      "triggers": ["playwright", "e2e testing", "browser test", "web automation", "playwright test"],
+      "triggers": [
+        "playwright",
+        "e2e testing",
+        "browser test",
+        "web automation",
+        "playwright test"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -935,7 +1568,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["playwright", "testing", "e2e", "automation", "browser"]
+      "tags": [
+        "playwright",
+        "testing",
+        "e2e",
+        "automation",
+        "browser"
+      ]
     },
     {
       "id": "winapp-cli",
@@ -945,9 +1584,17 @@
       "category": "devops-cicd",
       "author": "github",
       "license": "MIT",
-      "triggers": ["winapp", "windows app", "msix", "windows development", "uwp"],
+      "triggers": [
+        "winapp",
+        "windows app",
+        "msix",
+        "windows development",
+        "uwp"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows"],
+      "platforms": [
+        "windows"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -956,7 +1603,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["windows", "winapp", "msix", "packaging", "deployment"]
+      "tags": [
+        "windows",
+        "winapp",
+        "msix",
+        "packaging",
+        "deployment"
+      ]
     },
     {
       "id": "workiq-copilot",
@@ -966,9 +1619,19 @@
       "category": "data-analytics",
       "author": "github",
       "license": "MIT",
-      "triggers": ["workiq", "m365 copilot", "microsoft 365 analytics", "copilot data", "copilot insights"],
+      "triggers": [
+        "workiq",
+        "m365 copilot",
+        "microsoft 365 analytics",
+        "copilot data",
+        "copilot insights"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
@@ -977,7 +1640,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["workiq", "m365", "copilot", "analytics", "microsoft"]
+      "tags": [
+        "workiq",
+        "m365",
+        "copilot",
+        "analytics",
+        "microsoft"
+      ]
     },
     {
       "id": "algorithmic-art",
@@ -987,9 +1656,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["generative art", "p5js", "algorithmic art", "creative coding", "procedural art"],
+      "triggers": [
+        "generative art",
+        "p5js",
+        "algorithmic art",
+        "creative coding",
+        "procedural art"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -998,7 +1677,13 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["art", "p5js", "generative", "creative", "visualization"]
+      "tags": [
+        "art",
+        "p5js",
+        "generative",
+        "creative",
+        "visualization"
+      ]
     },
     {
       "id": "brand-guidelines",
@@ -1008,9 +1693,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["brand guidelines", "brand colors", "typography", "brand identity", "style guide"],
+      "triggers": [
+        "brand guidelines",
+        "brand colors",
+        "typography",
+        "brand identity",
+        "style guide"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1019,7 +1714,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["brand", "design", "typography", "colors", "guidelines"]
+      "tags": [
+        "brand",
+        "design",
+        "typography",
+        "colors",
+        "guidelines"
+      ]
     },
     {
       "id": "doc-coauthoring",
@@ -1029,9 +1730,19 @@
       "category": "documentation",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["co-authoring", "collaborative docs", "document review", "doc workflow", "writing collaboration"],
+      "triggers": [
+        "co-authoring",
+        "collaborative docs",
+        "document review",
+        "doc workflow",
+        "writing collaboration"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1040,7 +1751,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["documentation", "collaboration", "coauthoring", "writing", "workflow"]
+      "tags": [
+        "documentation",
+        "collaboration",
+        "coauthoring",
+        "writing",
+        "workflow"
+      ]
     },
     {
       "id": "internal-comms",
@@ -1050,9 +1767,19 @@
       "category": "documentation",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["internal comms", "announcement", "memo", "team update", "company communication"],
+      "triggers": [
+        "internal comms",
+        "announcement",
+        "memo",
+        "team update",
+        "company communication"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1061,7 +1788,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["communications", "internal", "announcements", "memos", "writing"]
+      "tags": [
+        "communications",
+        "internal",
+        "announcements",
+        "memos",
+        "writing"
+      ]
     },
     {
       "id": "slack-gif-creator",
@@ -1071,9 +1804,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["slack gif", "animated gif", "gif creator", "slack animation", "gif optimization"],
+      "triggers": [
+        "slack gif",
+        "animated gif",
+        "gif creator",
+        "slack animation",
+        "gif optimization"
+      ],
       "complexity": "beginner",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1082,7 +1825,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["slack", "gif", "animation", "communication", "media"]
+      "tags": [
+        "slack",
+        "gif",
+        "animation",
+        "communication",
+        "media"
+      ]
     },
     {
       "id": "theme-factory",
@@ -1092,9 +1841,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["theme", "theming", "styling", "visual theme", "theme generator"],
+      "triggers": [
+        "theme",
+        "theming",
+        "styling",
+        "visual theme",
+        "theme generator"
+      ],
       "complexity": "intermediate",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1103,7 +1862,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["theme", "styling", "design", "visual", "customization"]
+      "tags": [
+        "theme",
+        "styling",
+        "design",
+        "visual",
+        "customization"
+      ]
     },
     {
       "id": "web-artifacts-builder",
@@ -1113,9 +1878,19 @@
       "category": "frontend-ui",
       "author": "anthropic",
       "license": "Apache-2.0",
-      "triggers": ["claude artifact", "html artifact", "web component", "interactive html", "claude ui"],
+      "triggers": [
+        "claude artifact",
+        "html artifact",
+        "web component",
+        "interactive html",
+        "claude ui"
+      ],
       "complexity": "advanced",
-      "platforms": ["windows", "macos", "linux"],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
@@ -1124,7 +1899,52 @@
         "branch": "main"
       },
       "featured": true,
-      "tags": ["artifacts", "html", "claude", "web", "interactive"]
+      "tags": [
+        "artifacts",
+        "html",
+        "claude",
+        "web",
+        "interactive"
+      ]
+    },
+    {
+      "id": "copilot-tool-manager",
+      "name": "copilot-tool-manager",
+      "description": "Enable, disable, and manage VS Code Copilot agent tools by category. Optimize your context window by selectively disabling unused tools like browser, GitHub, or memory tools.",
+      "shortDescription": "Manage Copilot tools to save context window tokens",
+      "category": "devops-cicd",
+      "author": "SushantGautam",
+      "license": "MIT",
+      "triggers": [
+        "disable tools",
+        "enable tools",
+        "tool manager",
+        "context optimization",
+        "copilot tools",
+        "browser tools",
+        "terminal tools"
+      ],
+      "complexity": "beginner",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "source": {
+        "repo": "https://github.com/SushantGautam/copilot-tool-manager",
+        "repoName": "SushantGautam/copilot-tool-manager",
+        "path": ".",
+        "skillFile": "SKILL.md",
+        "branch": "main"
+      },
+      "featured": false,
+      "tags": [
+        "copilot",
+        "tools",
+        "context",
+        "optimization",
+        "vscode"
+      ]
     }
   ]
 }
