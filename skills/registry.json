@@ -1043,6 +1043,27 @@
       "tags": ["documentation", "collaboration", "coauthoring", "writing", "workflow"]
     },
     {
+      "id": "elecz-electricity",
+      "name": "elecz-electricity",
+      "description": "Real-time electricity spot prices, cheapest hours, and contract comparison across Europe, Oceania, and the Americas. Enables AI agents to reason about energy costs accurately instead of guessing.",
+      "shortDescription": "Real-time electricity prices — global coverage",
+      "category": "api-backend",
+      "author": "zemloai-ctrl",
+      "license": "MIT",
+      "triggers": ["electricity price", "spot price", "cheapest hours", "energy contract", "power price", "EV charging", "electricity"],
+      "complexity": "beginner",
+      "platforms": ["windows", "macos", "linux"],
+      "source": {
+        "repo": "https://github.com/zemloai-ctrl/elecz-api",
+        "repoName": "zemloai-ctrl/elecz-api",
+        "path": "SKILL.md",
+        "skillFile": "SKILL.md",
+        "branch": "main"
+      },
+      "featured": false,
+      "tags": ["electricity", "energy", "spot-price", "cheapest-hours", "mcp", "utilities"]
+    },
+    {
       "id": "internal-comms",
       "name": "internal-comms",
       "description": "A set of resources to help write all kinds of internal communications. Templates and guidance for announcements, updates, memos, and team communications.",
