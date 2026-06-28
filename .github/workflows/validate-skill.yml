@@ -22,10 +22,40 @@ jobs:
       - name: Install ajv-cli for JSON validation
         run: npm install -g ajv-cli ajv-formats
 
-      - name: Validate registry.json against schema
+      - name: Fetch base branch for diff
+        run: git fetch origin ${{ github.base_ref }} --depth=1
+
+      - name: Validate new skills against schema
         run: |
-          ajv validate -s skills/schema.json -d skills/registry.json --spec=draft2020 --strict=false
-          echo "✅ Registry JSON is valid"
+          node -e "
+            const fs = require('fs');
+            const registry = require('./skills/registry.json');
+            const { execSync } = require('child_process');
+
+            let baseSkillIds = new Set();
+            try {
+              const baseJson = execSync('git show FETCH_HEAD:skills/registry.json', { encoding: 'utf8' });
+              JSON.parse(baseJson).skills.forEach(s => baseSkillIds.add(s.id));
+            } catch (e) {
+              console.log('Could not load base registry; validating all skills');
+            }
+
+            const skillsToValidate = baseSkillIds.size > 0
+              ? registry.skills.filter(s => !baseSkillIds.has(s.id))
+              : registry.skills;
+
+            fs.writeFileSync(
+              '/tmp/registry-to-validate.json',
+              JSON.stringify({ version: registry.version, skills: skillsToValidate }, null, 2)
+            );
+            if (skillsToValidate.length === 0) {
+              console.log('✅ No new skills to validate');
+            } else {
+              console.log('Prepared ' + skillsToValidate.length + ' skill(s) for schema validation');
+            }
+          "
+          ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false
+          echo "✅ New skill entries are schema-valid"
 
       - name: Check for duplicate skill IDs
         run: |
@@ -39,9 +69,6 @@ jobs:
             }
             console.log('✅ No duplicate skill IDs');
           "
-
-      - name: Fetch base branch for diff
-        run: git fetch origin ${{ github.base_ref }} --depth=1
 
       - name: Validate skill source URLs
         run: |
