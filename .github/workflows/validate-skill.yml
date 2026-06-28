@@ -49,8 +49,11 @@ jobs:
               if (!skill.source?.repo?.startsWith('https://github.com/')) {
                 errors.push(skill.id + ': Invalid repo URL (must be https://github.com/...)');
               }
-              if (!skill.source?.path?.endsWith('.md')) {
-                errors.push(skill.id + ': Invalid path (must end with .md)');
+              const path = skill.source?.path;
+              const skillFile = skill.source?.skillFile;
+              const hasValidPath = path?.endsWith('.md') || (skillFile?.endsWith('.md') && path && !path.endsWith('.md'));
+              if (!hasValidPath) {
+                errors.push(skill.id + ': Invalid path (must end with .md, or provide a skillFile ending with .md)');
               }
             }
             if (errors.length > 0) {
