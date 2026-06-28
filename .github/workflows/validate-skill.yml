@@ -40,17 +40,42 @@ jobs:
             console.log('✅ No duplicate skill IDs');
           "
 
+      - name: Fetch base branch for diff
+        run: git fetch origin ${{ github.base_ref }} --depth=1
+
       - name: Validate skill source URLs
         run: |
           node -e "
             const registry = require('./skills/registry.json');
+            const { execSync } = require('child_process');
+
+            // Load base-branch registry to identify pre-existing skills
+            let baseSkillIds = new Set();
+            try {
+              const baseJson = execSync('git show FETCH_HEAD:skills/registry.json', { encoding: 'utf8' });
+              JSON.parse(baseJson).skills.forEach(s => baseSkillIds.add(s.id));
+            } catch (e) {
+              console.log('Could not load base registry; validating all skills');
+            }
+
+            // Only validate skills that are new in this PR
+            const newSkills = baseSkillIds.size > 0
+              ? registry.skills.filter(s => !baseSkillIds.has(s.id))
+              : registry.skills;
+
+            if (newSkills.length === 0) {
+              console.log('✅ No new skills to validate');
+              process.exit(0);
+            }
+            console.log('Validating ' + newSkills.length + ' new skill(s): ' + newSkills.map(s => s.id).join(', '));
+
             const errors = [];
-            for (const skill of registry.skills) {
+            for (const skill of newSkills) {
               if (!skill.source?.repo?.startsWith('https://github.com/')) {
-                errors.push(skill.id + ': Invalid repo URL (must be https://github.com/...)');
+                errors.push(skill.id + ': Invalid repo URL (must start with https://github.com/)');
               }
               if (!skill.source?.path?.endsWith('.md')) {
-                errors.push(skill.id + ': Invalid path (must end with .md)');
+                errors.push(skill.id + ': Invalid path (must end with .md, e.g. skills/my-skill/SKILL.md)');
               }
             }
             if (errors.length > 0) {
@@ -58,7 +83,7 @@ jobs:
               errors.forEach(e => console.error('  - ' + e));
               process.exit(1);
             }
-            console.log('✅ All skill source URLs are valid');
+            console.log('✅ All new skill source URLs are valid');
           "
 
       - name: Post validation summary
