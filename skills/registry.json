@@ -1922,10 +1922,24 @@
         "apollo client"
       ],
       "complexity": "intermediate",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "source": {
         "repo": "https://github.com/dmytro-balytskyi/skills",
         "path": "skills/vue-apollo/SKILL.md"
-      }
+      },
+      "featured": false,
+      "tags": [
+        "vue",
+        "graphql",
+        "apollo",
+        "vue3",
+        "composables",
+        "typescript"
+      ]
     }
   ]
 }
