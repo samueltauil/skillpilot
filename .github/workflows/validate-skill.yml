@@ -56,8 +56,17 @@ jobs:
           else
             SCHEMA_SPEC=$(node -e "
               const schema = require('./skills/schema.json');
-              const schemaUri = schema['\$schema'] || '';
-              process.stdout.write(schemaUri.includes('draft/2020-12') ? 'draft2020' : 'draft7');
+              const schemaUri = String(schema['\$schema'] || '').toLowerCase();
+              if (schemaUri.includes('draft/2020-12')) {
+                process.stdout.write('draft2020');
+                process.exit(0);
+              }
+              if (schemaUri.includes('draft-07')) {
+                process.stdout.write('draft7');
+                process.exit(0);
+              }
+              console.error('Unsupported \$schema in skills/schema.json: ' + schemaUri);
+              process.exit(1);
             ")
             echo "Validating $SKILL_COUNT new skill(s) against schema..."
             ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec="$SCHEMA_SPEC" --strict=false -c ajv-formats
