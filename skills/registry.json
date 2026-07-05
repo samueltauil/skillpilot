@@ -1732,7 +1732,13 @@
         "branch": "main"
       },
       "featured": false,
-      "tags": ["electricity", "energy", "spot-price", "cheapest-hours", "mcp", "utilities"]
+      "tags": [
+        "documentation",
+        "collaboration",
+        "coauthoring",
+        "writing",
+        "workflow"
+      ]
     },
     {
       "id": "internal-comms",
@@ -1879,37 +1885,42 @@
       ]
     },
     {
-      "id": "vue-apollo",
-      "name": "Vue Apollo Best Practices",
-      "description": "Complete guide for Vue 3 + GraphQL using @vue/apollo-composable v4.x and Apollo Client v3. Covers useQuery, useMutation, subscriptions, WebSocket setup, local state (@client), components API, pagination, caching, and Codegen integration.",
-      "shortDescription": "Vue 3 + GraphQL best practices with Apollo",
-      "category": "api-backend",
-      "author": "dmytro-balytskyi",
+      "id": "copilot-tool-manager",
+      "name": "copilot-tool-manager",
+      "description": "Enable, disable, and manage VS Code Copilot agent tools by category. Optimize your context window by selectively disabling unused tools like browser, GitHub, or memory tools.",
+      "shortDescription": "Manage Copilot tools to save context window tokens",
+      "category": "devops-cicd",
+      "author": "SushantGautam",
       "license": "MIT",
       "triggers": [
-        "vue apollo graphql",
-        "useQuery",
-        "useMutation",
-        "apollo client"
+        "disable tools",
+        "enable tools",
+        "tool manager",
+        "context optimization",
+        "copilot tools",
+        "browser tools",
+        "terminal tools"
       ],
-      "complexity": "intermediate",
+      "complexity": "beginner",
       "platforms": [
         "windows",
         "macos",
         "linux"
       ],
       "source": {
-        "repo": "https://github.com/dmytro-balytskyi/skills",
-        "path": "skills/vue-apollo/SKILL.md"
+        "repo": "https://github.com/SushantGautam/copilot-tool-manager",
+        "repoName": "SushantGautam/copilot-tool-manager",
+        "path": ".",
+        "skillFile": "SKILL.md",
+        "branch": "main"
       },
       "featured": false,
       "tags": [
-        "vue",
-        "graphql",
-        "apollo",
-        "vue3",
-        "composables",
-        "typescript"
+        "copilot",
+        "tools",
+        "context",
+        "optimization",
+        "vscode"
       ]
     }
   ]
