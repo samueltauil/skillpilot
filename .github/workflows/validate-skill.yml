@@ -54,8 +54,13 @@ jobs:
           if [ "$SKILL_COUNT" -eq 0 ]; then
             echo "✅ No new skills to validate"
           else
+            SCHEMA_SPEC=$(node -e "
+              const schema = require('./skills/schema.json');
+              const schemaUri = schema['\$schema'] || '';
+              process.stdout.write(schemaUri.includes('draft/2020-12') ? 'draft2020' : 'draft7');
+            ")
             echo "Validating $SKILL_COUNT new skill(s) against schema..."
-            ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false -c ajv-formats
+            ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec="$SCHEMA_SPEC" --strict=false -c ajv-formats
             echo "✅ New skill entries are schema-valid"
           fi
 
