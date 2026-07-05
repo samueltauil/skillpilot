@@ -23,6 +23,7 @@ jobs:
         run: npm install -g ajv-cli ajv-formats
 
       - name: Fetch base branch for diff
+        continue-on-error: true
         run: git fetch origin ${{ github.base_ref }} --depth=1
 
       - name: Validate new skills against schema
