@@ -54,7 +54,7 @@ jobs:
               console.log('Prepared ' + skillsToValidate.length + ' skill(s) for schema validation');
             }
           "
-          ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false
+          ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false -c ajv-formats
           echo "✅ New skill entries are schema-valid"
 
       - name: Check for duplicate skill IDs
