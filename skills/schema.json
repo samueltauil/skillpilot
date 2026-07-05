@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Copilot Skills Registry",
   "description": "Schema for the Skills Hub skill registry",
   "type": "object",
@@ -16,18 +16,18 @@
     "categories": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Category"
+        "$ref": "#/$defs/Category"
       }
     },
     "skills": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Skill"
+        "$ref": "#/$defs/Skill"
       }
     }
   },
   "required": ["version", "skills"],
-  "definitions": {
+  "$defs": {
     "Category": {
       "type": "object",
       "properties": {
