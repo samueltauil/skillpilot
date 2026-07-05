@@ -6,73 +6,73 @@
       "id": "git-version-control",
       "name": "Git & Version Control",
       "description": "Skills for git workflows, commits, branching, and GitHub operations",
-      "icon": "🔀"
+      "icon": "\ud83d\udd00"
     },
     {
       "id": "code-quality",
       "name": "Code Quality & Refactoring",
       "description": "Skills for code reviews, refactoring, linting, and best practices",
-      "icon": "✨"
+      "icon": "\u2728"
     },
     {
       "id": "documentation",
       "name": "Documentation",
       "description": "Skills for writing docs, READMEs, PRDs, and technical writing",
-      "icon": "📝"
+      "icon": "\ud83d\udcdd"
     },
     {
       "id": "diagrams",
       "name": "Diagrams & Visualization",
       "description": "Skills for creating Mermaid, PlantUML, Excalidraw diagrams",
-      "icon": "📊"
+      "icon": "\ud83d\udcca"
     },
     {
       "id": "testing",
       "name": "Testing",
       "description": "Skills for unit tests, integration tests, E2E, and test automation",
-      "icon": "🧪"
+      "icon": "\ud83e\uddea"
     },
     {
       "id": "api-backend",
       "name": "API & Backend",
       "description": "Skills for REST APIs, GraphQL, databases, and backend development",
-      "icon": "🔌"
+      "icon": "\ud83d\udd0c"
     },
     {
       "id": "frontend-ui",
       "name": "Frontend & UI",
       "description": "Skills for React, Vue, CSS, components, and web design",
-      "icon": "🎨"
+      "icon": "\ud83c\udfa8"
     },
     {
       "id": "devops-cicd",
       "name": "DevOps & CI/CD",
       "description": "Skills for pipelines, Docker, Kubernetes, Terraform, and deployments",
-      "icon": "🚀"
+      "icon": "\ud83d\ude80"
     },
     {
       "id": "security",
       "name": "Security",
       "description": "Skills for security audits, vulnerability scanning, and secure coding",
-      "icon": "🔒"
+      "icon": "\ud83d\udd12"
     },
     {
       "id": "data-analytics",
       "name": "Data & Analytics",
       "description": "Skills for data pipelines, SQL, Power BI, and data analysis",
-      "icon": "📈"
+      "icon": "\ud83d\udcc8"
     },
     {
       "id": "office-documents",
       "name": "Office Documents",
       "description": "Skills for creating and editing Word, Excel, PowerPoint, and PDF files",
-      "icon": "📄"
+      "icon": "\ud83d\udcc4"
     },
     {
       "id": "mcp-development",
       "name": "MCP Development",
       "description": "Skills for building Model Context Protocol servers and apps",
-      "icon": "🔧"
+      "icon": "\ud83d\udd27"
     }
   ],
   "skills": [
@@ -100,8 +100,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/git-commit",
-        "skillFile": "SKILL.md",
+        "path": "skills/git-commit/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -136,8 +135,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/refactor",
-        "skillFile": "SKILL.md",
+        "path": "skills/refactor/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -172,8 +170,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/prd",
-        "skillFile": "SKILL.md",
+        "path": "skills/prd/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -208,8 +205,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/excalidraw-diagram-generator",
-        "skillFile": "SKILL.md",
+        "path": "skills/excalidraw-diagram-generator/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -245,8 +241,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/plantuml-ascii",
-        "skillFile": "SKILL.md",
+        "path": "skills/plantuml-ascii/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -282,8 +277,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/gh-cli",
-        "skillFile": "SKILL.md",
+        "path": "skills/gh-cli/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -319,8 +313,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/github-issues",
-        "skillFile": "SKILL.md",
+        "path": "skills/github-issues/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -354,8 +347,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/azure-static-web-apps",
-        "skillFile": "SKILL.md",
+        "path": "skills/azure-static-web-apps/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -389,8 +381,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/azure-devops-cli",
-        "skillFile": "SKILL.md",
+        "path": "skills/azure-devops-cli/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -425,8 +416,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/copilot-sdk",
-        "skillFile": "SKILL.md",
+        "path": "skills/copilot-sdk/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -461,8 +451,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/meeting-minutes",
-        "skillFile": "SKILL.md",
+        "path": "skills/meeting-minutes/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -496,8 +485,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/agentic-eval",
-        "skillFile": "SKILL.md",
+        "path": "skills/agentic-eval/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -532,8 +520,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/mcp-builder",
-        "skillFile": "SKILL.md",
+        "path": "skills/mcp-builder/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -569,8 +556,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/frontend-design",
-        "skillFile": "SKILL.md",
+        "path": "skills/frontend-design/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -606,8 +592,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/canvas-design",
-        "skillFile": "SKILL.md",
+        "path": "skills/canvas-design/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -642,8 +627,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/webapp-testing",
-        "skillFile": "SKILL.md",
+        "path": "skills/webapp-testing/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -678,8 +662,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/skill-creator",
-        "skillFile": "SKILL.md",
+        "path": "skills/skill-creator/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -715,8 +698,7 @@
       "source": {
         "repo": "https://github.com/modelcontextprotocol/ext-apps",
         "repoName": "modelcontextprotocol/ext-apps",
-        "path": "plugins/mcp-apps/skills/create-mcp-app",
-        "skillFile": "SKILL.md",
+        "path": "plugins/mcp-apps/skills/create-mcp-app/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -753,8 +735,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/appinsights-instrumentation",
-        "skillFile": "SKILL.md",
+        "path": "skills/appinsights-instrumentation/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -789,8 +770,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/azure-deployment-preflight",
-        "skillFile": "SKILL.md",
+        "path": "skills/azure-deployment-preflight/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -825,8 +805,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/azure-resource-visualizer",
-        "skillFile": "SKILL.md",
+        "path": "skills/azure-resource-visualizer/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -862,8 +841,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/azure-role-selector",
-        "skillFile": "SKILL.md",
+        "path": "skills/azure-role-selector/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -899,8 +877,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/chrome-devtools",
-        "skillFile": "SKILL.md",
+        "path": "skills/chrome-devtools/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -936,8 +913,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/image-manipulation-image-magick",
-        "skillFile": "SKILL.md",
+        "path": "skills/image-manipulation-image-magick/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -973,8 +949,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/legacy-circuit-mockups",
-        "skillFile": "SKILL.md",
+        "path": "skills/legacy-circuit-mockups/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1010,8 +985,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/make-repo-contribution",
-        "skillFile": "SKILL.md",
+        "path": "skills/make-repo-contribution/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1047,8 +1021,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/make-skill-template",
-        "skillFile": "SKILL.md",
+        "path": "skills/make-skill-template/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -1083,8 +1056,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/markdown-to-html",
-        "skillFile": "SKILL.md",
+        "path": "skills/markdown-to-html/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1119,8 +1091,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/mcp-cli",
-        "skillFile": "SKILL.md",
+        "path": "skills/mcp-cli/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1156,8 +1127,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/microsoft-code-reference",
-        "skillFile": "SKILL.md",
+        "path": "skills/microsoft-code-reference/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1193,8 +1163,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/microsoft-docs",
-        "skillFile": "SKILL.md",
+        "path": "skills/microsoft-docs/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1230,8 +1199,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/nuget-manager",
-        "skillFile": "SKILL.md",
+        "path": "skills/nuget-manager/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1267,8 +1235,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/penpot-uiux-design",
-        "skillFile": "SKILL.md",
+        "path": "skills/penpot-uiux-design/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1304,8 +1271,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/powerbi-modeling",
-        "skillFile": "SKILL.md",
+        "path": "skills/powerbi-modeling/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -1341,8 +1307,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/scoutqa-test",
-        "skillFile": "SKILL.md",
+        "path": "skills/scoutqa-test/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1378,8 +1343,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/snowflake-semanticview",
-        "skillFile": "SKILL.md",
+        "path": "skills/snowflake-semanticview/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1415,8 +1379,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/terraform-azurerm-set-diff-analyzer",
-        "skillFile": "SKILL.md",
+        "path": "skills/terraform-azurerm-set-diff-analyzer/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1452,8 +1415,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/vscode-ext-commands",
-        "skillFile": "SKILL.md",
+        "path": "skills/vscode-ext-commands/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1489,8 +1451,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/vscode-ext-localization",
-        "skillFile": "SKILL.md",
+        "path": "skills/vscode-ext-localization/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1526,8 +1487,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/web-design-reviewer",
-        "skillFile": "SKILL.md",
+        "path": "skills/web-design-reviewer/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1563,8 +1523,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/webapp-testing",
-        "skillFile": "SKILL.md",
+        "path": "skills/webapp-testing/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1598,8 +1557,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/winapp-cli",
-        "skillFile": "SKILL.md",
+        "path": "skills/winapp-cli/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1635,8 +1593,7 @@
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "repoName": "github/awesome-copilot",
-        "path": "skills/workiq-copilot",
-        "skillFile": "SKILL.md",
+        "path": "skills/workiq-copilot/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1672,8 +1629,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/algorithmic-art",
-        "skillFile": "SKILL.md",
+        "path": "skills/algorithmic-art/SKILL.md",
         "branch": "main"
       },
       "featured": true,
@@ -1709,8 +1665,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/brand-guidelines",
-        "skillFile": "SKILL.md",
+        "path": "skills/brand-guidelines/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1746,8 +1701,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/doc-coauthoring",
-        "skillFile": "SKILL.md",
+        "path": "skills/doc-coauthoring/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1758,6 +1712,27 @@
         "writing",
         "workflow"
       ]
+    },
+    {
+      "id": "elecz-electricity",
+      "name": "elecz-electricity",
+      "description": "Real-time electricity spot prices, cheapest hours, and contract comparison across Europe, Oceania, and the Americas. Enables AI agents to reason about energy costs accurately instead of guessing.",
+      "shortDescription": "Real-time electricity prices — global coverage",
+      "category": "api-backend",
+      "author": "zemloai-ctrl",
+      "license": "MIT",
+      "triggers": ["electricity price", "spot price", "cheapest hours", "energy contract", "power price", "EV charging", "electricity"],
+      "complexity": "beginner",
+      "platforms": ["windows", "macos", "linux"],
+      "source": {
+        "repo": "https://github.com/zemloai-ctrl/elecz-api",
+        "repoName": "zemloai-ctrl/elecz-api",
+        "path": "SKILL.md",
+        "skillFile": "SKILL.md",
+        "branch": "main"
+      },
+      "featured": false,
+      "tags": ["electricity", "energy", "spot-price", "cheapest-hours", "mcp", "utilities"]
     },
     {
       "id": "internal-comms",
@@ -1783,8 +1758,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/internal-comms",
-        "skillFile": "SKILL.md",
+        "path": "skills/internal-comms/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1820,8 +1794,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/slack-gif-creator",
-        "skillFile": "SKILL.md",
+        "path": "skills/slack-gif-creator/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1857,8 +1830,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/theme-factory",
-        "skillFile": "SKILL.md",
+        "path": "skills/theme-factory/SKILL.md",
         "branch": "main"
       },
       "featured": false,
@@ -1894,8 +1866,7 @@
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "repoName": "anthropics/skills",
-        "path": "skills/web-artifacts-builder",
-        "skillFile": "SKILL.md",
+        "path": "skills/web-artifacts-builder/SKILL.md",
         "branch": "main"
       },
       "featured": true,
