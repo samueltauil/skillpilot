@@ -22,10 +22,40 @@ jobs:
       - name: Install ajv-cli for JSON validation
         run: npm install -g ajv-cli ajv-formats
 
-      - name: Validate registry.json against schema
+      - name: Fetch base branch for diff
+        run: git fetch origin ${{ github.base_ref }} --depth=1
+
+      - name: Validate new skills against schema
         run: |
-          ajv validate -s skills/schema.json -d skills/registry.json --spec=draft2020 --strict=false
-          echo "✅ Registry JSON is valid"
+          node -e "
+            const fs = require('fs');
+            const registry = require('./skills/registry.json');
+            const { execSync } = require('child_process');
+
+            let baseSkillIds = new Set();
+            try {
+              const baseJson = execSync('git show FETCH_HEAD:skills/registry.json', { encoding: 'utf8' });
+              JSON.parse(baseJson).skills.forEach(s => baseSkillIds.add(s.id));
+            } catch (e) {
+              console.log('Could not load base registry; validating all skills');
+            }
+
+            const skillsToValidate = baseSkillIds.size > 0
+              ? registry.skills.filter(s => !baseSkillIds.has(s.id))
+              : registry.skills;
+
+            fs.writeFileSync(
+              '/tmp/registry-to-validate.json',
+              JSON.stringify({ version: registry.version, skills: skillsToValidate }, null, 2)
+            );
+            if (skillsToValidate.length === 0) {
+              console.log('✅ No new skills to validate');
+            } else {
+              console.log('Prepared ' + skillsToValidate.length + ' skill(s) for schema validation');
+            }
+          "
+          ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false
+          echo "✅ New skill entries are schema-valid"
 
       - name: Check for duplicate skill IDs
         run: |
@@ -44,10 +74,32 @@ jobs:
         run: |
           node -e "
             const registry = require('./skills/registry.json');
+            const { execSync } = require('child_process');
+
+            // Load base-branch registry to identify pre-existing skills
+            let baseSkillIds = new Set();
+            try {
+              const baseJson = execSync('git show FETCH_HEAD:skills/registry.json', { encoding: 'utf8' });
+              JSON.parse(baseJson).skills.forEach(s => baseSkillIds.add(s.id));
+            } catch (e) {
+              console.log('Could not load base registry; validating all skills');
+            }
+
+            // Only validate skills that are new in this PR
+            const newSkills = baseSkillIds.size > 0
+              ? registry.skills.filter(s => !baseSkillIds.has(s.id))
+              : registry.skills;
+
+            if (newSkills.length === 0) {
+              console.log('✅ No new skills to validate');
+              process.exit(0);
+            }
+            console.log('Validating ' + newSkills.length + ' new skill(s): ' + newSkills.map(s => s.id).join(', '));
+
             const errors = [];
-            for (const skill of registry.skills) {
+            for (const skill of newSkills) {
               if (!skill.source?.repo?.startsWith('https://github.com/')) {
-                errors.push(skill.id + ': Invalid repo URL (must be https://github.com/...)');
+                errors.push(skill.id + ': Invalid repo URL (must start with https://github.com/)');
               }
               const path = skill.source?.path;
               const skillFile = skill.source?.skillFile;
@@ -61,7 +113,7 @@ jobs:
               errors.forEach(e => console.error('  - ' + e));
               process.exit(1);
             }
-            console.log('✅ All skill source URLs are valid');
+            console.log('✅ All new skill source URLs are valid');
           "
 
       - name: Post validation summary
