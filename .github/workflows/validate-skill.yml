@@ -27,7 +27,7 @@ jobs:
 
       - name: Validate new skills against schema
         run: |
-          node -e "
+          SKILL_COUNT=$(node -e "
             const fs = require('fs');
             const registry = require('./skills/registry.json');
             const { execSync } = require('child_process');
@@ -37,7 +37,7 @@ jobs:
               const baseJson = execSync('git show FETCH_HEAD:skills/registry.json', { encoding: 'utf8' });
               JSON.parse(baseJson).skills.forEach(s => baseSkillIds.add(s.id));
             } catch (e) {
-              console.log('Could not load base registry; validating all skills');
+              console.error('Could not load base registry; validating all skills');
             }
 
             const skillsToValidate = baseSkillIds.size > 0
@@ -48,14 +48,15 @@ jobs:
               '/tmp/registry-to-validate.json',
               JSON.stringify({ version: registry.version, skills: skillsToValidate }, null, 2)
             );
-            if (skillsToValidate.length === 0) {
-              console.log('✅ No new skills to validate');
-            } else {
-              console.log('Prepared ' + skillsToValidate.length + ' skill(s) for schema validation');
-            }
-          "
-          ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false -c ajv-formats
-          echo "✅ New skill entries are schema-valid"
+            process.stdout.write(String(skillsToValidate.length));
+          ")
+          if [ "$SKILL_COUNT" -eq 0 ]; then
+            echo "✅ No new skills to validate"
+          else
+            echo "Validating $SKILL_COUNT new skill(s) against schema..."
+            ajv validate -s skills/schema.json -d /tmp/registry-to-validate.json --spec=draft2020 --strict=false -c ajv-formats
+            echo "✅ New skill entries are schema-valid"
+          fi
 
       - name: Check for duplicate skill IDs
         run: |
