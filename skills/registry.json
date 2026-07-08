@@ -1133,7 +1133,7 @@
       "shortDescription": "Transactional email via Mailtrap API with sandbox testing and domain setup",
       "category": "api-backend",
       "author": "mailtrap",
-      "license": "Not specified",
+      "license": "MIT",
       "triggers": ["email", "mailtrap", "transactional email", "smtp", "email api", "sandbox testing", "domain verification", "spf", "dkim"],
       "complexity": "intermediate",
       "source": {
