@@ -147,6 +147,44 @@
       ]
     },
     {
+      "id": "ontoly-software-graph",
+      "name": "Ontoly Software Graph",
+      "description": "Use Ontoly's deterministic Software Graph and MCP server to answer architecture, route tracing, dependency, configuration, and impact-analysis questions before broad source search.",
+      "shortDescription": "Query deterministic Software Graph evidence",
+      "category": "code-quality",
+      "author": "0xsarwagya",
+      "license": "MIT",
+      "triggers": [
+        "ontoly",
+        "software graph",
+        "architecture summary",
+        "route tracing",
+        "dependency analysis",
+        "impact analysis",
+        "configuration usage"
+      ],
+      "complexity": "advanced",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "source": {
+        "repo": "https://github.com/0xsarwagya/ontoly",
+        "repoName": "0xsarwagya/ontoly",
+        "path": "skills/architecture-review/SKILL.md",
+        "branch": "main"
+      },
+      "featured": false,
+      "tags": [
+        "software-graph",
+        "mcp",
+        "architecture",
+        "dependencies",
+        "impact-analysis"
+      ]
+    },
+    {
       "id": "prd",
       "name": "prd",
       "description": "Generate Product Requirements Documents from feature descriptions. Creates structured PRDs with user stories, acceptance criteria, and technical requirements.",
