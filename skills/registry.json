@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "lastUpdated": "2026-07-10T22:18:36Z",
+  "lastUpdated": "2026-07-18T10:56:00Z",
   "categories": [
     {
       "id": "git-version-control",
@@ -1926,12 +1926,12 @@
     {
       "id": "xquik-social-research",
       "name": "Xquik Social Research",
-      "description": "Research bounded public X data with Xquik through its documented REST API or remote MCP server. Use it for tweet search, user discovery, timelines, followers, trends, exports, and monitoring plans.",
-      "shortDescription": "Research public X data through Xquik",
+      "description": "Research bounded public X data through Xquik REST or MCP. Use for post search, user discovery, timelines, followers, trends, exports, and monitoring plans. Xquik is an independent third-party service. Not affiliated with X Corp. \"Twitter\" and \"X\" are trademarks of X Corp.",
+      "shortDescription": "Research bounded public X data through REST and remote MCP",
       "category": "data-analytics",
       "author": "Xquik",
       "license": "MIT",
-      "version": "2.4.17",
+      "version": "2.5.4",
       "triggers": [
         "search X posts",
         "search tweets",
