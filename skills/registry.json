@@ -168,8 +168,8 @@
         "linux"
       ],
       "source": {
-        "repo": "https://github.com/samuelbushi/uizze",
-        "repoName": "samuelbushi/uizze",
+        "repo": "https://github.com/uizze/uizze",
+        "repoName": "uizze/uizze",
         "path": "skills/anti-ui-slop/SKILL.md",
         "branch": "main"
       },
