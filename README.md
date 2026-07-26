@@ -7,7 +7,7 @@
 > Discover, browse, and install GitHub Copilot skills for your projects.
 
 [![Website](https://img.shields.io/badge/Website-Live-success?logo=github)](https://skillshub.space)
-[![Skills Count](https://img.shields.io/badge/Skills-419-blue)](./site/src/data/skills.json)
+[![Skills Count](https://img.shields.io/badge/Skills-442-blue)](./site/src/data/skills.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What is this?
@@ -33,14 +33,14 @@ Or explore the [skills registry](./skills/registry.json) directly.
 
 | Category | Skills | Description |
 |----------|:------:|-------------|
-| ✨ Code Quality | 102 | Reviews, refactoring, linting |
-| 📝 Documentation | 60 | READMEs, PRDs, technical writing |
-| 🔀 Git & Version Control | 59 | Commits, branching, GitHub operations |
-| 🎨 Frontend & UI | 56 | React, Vue, components, design |
+| ✨ Code Quality | 112 | Reviews, refactoring, linting |
+| 📝 Documentation | 63 | READMEs, PRDs, technical writing |
+| 🔀 Git & Version Control | 61 | Commits, branching, GitHub operations |
+| 🎨 Frontend & UI | 58 | React, Vue, components, design |
 | 🔌 API & Backend | 46 | REST APIs, GraphQL, databases |
-| 🧪 Testing | 39 | Unit tests, E2E, test automation |
-| 🚀 DevOps & CI/CD | 34 | Pipelines, Docker, Kubernetes |
-| 🔧 MCP Development | 5 | Model Context Protocol servers and apps |
+| 🧪 Testing | 42 | Unit tests, E2E, test automation |
+| 🚀 DevOps & CI/CD | 36 | Pipelines, Docker, Kubernetes |
+| 🔧 MCP Development | 6 | Model Context Protocol servers and apps |
 | 📊 Diagrams | 12 | Mermaid, PlantUML, visualizations |
 | 🔒 Security | 2 | Audits, vulnerabilities, secure coding |
 | 📈 Data & Analytics | 4 | SQL, data pipelines, visualization |
