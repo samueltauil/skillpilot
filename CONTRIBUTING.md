@@ -181,7 +181,7 @@ You can validate locally before submitting:
 npm install -g ajv-cli ajv-formats
 
 # Validate registry against schema
-ajv validate -s skills/schema.json -d skills/registry.json
+ajv validate -s skills/schema.json -d skills/registry.json --spec=draft2020 --strict=false -c ajv-formats
 ```
 
 ---
