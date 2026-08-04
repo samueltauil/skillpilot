@@ -147,6 +147,42 @@
       ]
     },
     {
+      "id": "anti-ui-slop",
+      "name": "STOP UI SLOP",
+      "description": "Stop generic UI before it ships. Turn real interface evidence into a product-specific design contract, implement the states the flow actually needs, and enforce a hard finish gate for React, Next.js, web, and iOS interfaces.",
+      "shortDescription": "Stop generic UI with evidence, states, and a hard finish gate",
+      "category": "frontend-ui",
+      "author": "UIZZE",
+      "license": "MIT",
+      "triggers": [
+        "stop UI slop",
+        "review this UI",
+        "make this interface product-specific",
+        "finish gate",
+        "generic dashboard"
+      ],
+      "complexity": "advanced",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "source": {
+        "repo": "https://github.com/uizze/uizze",
+        "repoName": "uizze/uizze",
+        "path": "skills/anti-ui-slop/SKILL.md",
+        "branch": "main"
+      },
+      "featured": false,
+      "tags": [
+        "ui-design",
+        "frontend",
+        "design-systems",
+        "code-quality",
+        "anti-slop"
+      ]
+    },
+    {
       "id": "prd",
       "name": "prd",
       "description": "Generate Product Requirements Documents from feature descriptions. Creates structured PRDs with user stories, acceptance criteria, and technical requirements.",
