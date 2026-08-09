@@ -7,7 +7,7 @@
 > Discover, browse, and install GitHub Copilot skills for your projects.
 
 [![Website](https://img.shields.io/badge/Website-Live-success?logo=github)](https://skillshub.space)
-[![Skills Count](https://img.shields.io/badge/Skills-446-blue)](./site/src/data/skills.json)
+[![Skills Count](https://img.shields.io/badge/Skills-453-blue)](./site/src/data/skills.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What is this?
@@ -33,10 +33,10 @@ Or explore the [skills registry](./skills/registry.json) directly.
 
 | Category | Skills | Description |
 |----------|:------:|-------------|
-| ✨ Code Quality | 112 | Reviews, refactoring, linting |
+| ✨ Code Quality | 117 | Reviews, refactoring, linting |
 | 📝 Documentation | 63 | READMEs, PRDs, technical writing |
-| 🔀 Git & Version Control | 63 | Commits, branching, GitHub operations |
-| 🎨 Frontend & UI | 59 | React, Vue, components, design |
+| 🔀 Git & Version Control | 64 | Commits, branching, GitHub operations |
+| 🎨 Frontend & UI | 60 | React, Vue, components, design |
 | 🔌 API & Backend | 47 | REST APIs, GraphQL, databases |
 | 🧪 Testing | 42 | Unit tests, E2E, test automation |
 | 🚀 DevOps & CI/CD | 37 | Pipelines, Docker, Kubernetes |
