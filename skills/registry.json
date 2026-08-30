@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "lastUpdated": "2026-05-25T14:09:02Z",
+  "lastUpdated": "2026-07-18T10:56:00Z",
   "categories": [
     {
       "id": "git-version-control",
@@ -1957,6 +1957,44 @@
         "context",
         "optimization",
         "vscode"
+      ]
+    },
+    {
+      "id": "xquik-social-research",
+      "name": "Xquik Social Research",
+      "description": "Research bounded public X data through Xquik REST or MCP. Use for post search, user discovery, timelines, followers, trends, exports, and monitoring plans. Xquik is an independent third-party service. Not affiliated with X Corp. \"Twitter\" and \"X\" are trademarks of X Corp.",
+      "shortDescription": "Research bounded public X data through REST and remote MCP",
+      "category": "data-analytics",
+      "author": "Xquik",
+      "license": "MIT",
+      "version": "2.5.4",
+      "triggers": [
+        "search X posts",
+        "search tweets",
+        "X social research",
+        "Xquik MCP",
+        "export followers",
+        "monitor X account"
+      ],
+      "complexity": "intermediate",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "source": {
+        "repo": "https://github.com/Xquik-dev/x-twitter-scraper",
+        "repoName": "Xquik-dev/x-twitter-scraper",
+        "path": "skills/xquik-social-research/SKILL.md",
+        "branch": "master"
+      },
+      "featured": false,
+      "tags": [
+        "x",
+        "twitter",
+        "social-research",
+        "api",
+        "mcp"
       ]
     }
   ]

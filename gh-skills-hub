@@ -25,7 +25,6 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
-CYAN='\033[0;36m'
 BOLD='\033[1m'
 DIM='\033[2m'
 NC='\033[0m'
@@ -76,10 +75,14 @@ fetch_skills_data() {
 json_query() {
   local query="$1"
   python3 -c "
-import json, sys
+import json, os, sys
 data = json.load(sys.stdin)
 $query
 "
+}
+
+validate_skill_id() {
+  [[ "$1" =~ ^[a-z0-9][a-z0-9-]*$ ]] || die "Invalid skill name '$1'."
 }
 
 # ── Commands ──────────────────────────────────────────────────────────────────
@@ -115,9 +118,9 @@ cmd_search() {
   echo -e "${BOLD}Search results for '${query}'${NC}"
   echo ""
 
-  local count
-  count=$(echo "$data" | json_query "
-q = '${query}'.lower()
+  local count output
+  output=$(echo "$data" | SKILLS_QUERY="$query" json_query "
+q = os.environ['SKILLS_QUERY'].lower()
 results = [s for s in data['skills']
            if q in s['id'].lower()
            or q in s.get('name','').lower()
@@ -131,9 +134,12 @@ for s in results:
     cat = s.get('category', 'general')
     print(f\"  {color}{verified}\033[0m  \033[1m{s['id']:<35}\033[0m \033[2m[{cat}]\033[0m  {s.get('shortDescription', s.get('description',''))[:50]}\")
 ")
+  count="${output%%$'\n'*}"
 
   if [[ "$count" == "0" ]]; then
     echo -e "  ${DIM}No skills found matching '${query}'.${NC}"
+  else
+    printf '%s\n' "${output#*$'\n'}"
   fi
   echo ""
 }
@@ -141,14 +147,16 @@ for s in results:
 cmd_info() {
   local skill_id="${1:-}"
   [[ -z "$skill_id" ]] && die "Usage: gh skills info <skill-name>"
+  validate_skill_id "$skill_id"
 
   local data
   data=$(fetch_skills_data)
 
-  echo "$data" | json_query "
-matches = [s for s in data['skills'] if s['id'] == '${skill_id}']
+  echo "$data" | SKILL_ID="$skill_id" json_query "
+skill_id = os.environ['SKILL_ID']
+matches = [s for s in data['skills'] if s['id'] == skill_id]
 if not matches:
-    print('\033[0;31mError:\033[0m Skill \"${skill_id}\" not found.')
+    print(f'\033[0;31mError:\033[0m Skill \"{skill_id}\" not found.')
     sys.exit(1)
 s = matches[0]
 verified = '\033[0;32m✓ Verified\033[0m' if s.get('verified', False) else '\033[0;33m⚠ Unverified\033[0m'
@@ -173,14 +181,16 @@ print()
 cmd_install() {
   local skill_id="${1:-}"
   [[ -z "$skill_id" ]] && die "Usage: gh skills install <skill-name>"
+  validate_skill_id "$skill_id"
 
   local data
   data=$(fetch_skills_data)
 
   # Check if skill exists
   local exists
-  exists=$(echo "$data" | json_query "
-matches = [s for s in data['skills'] if s['id'] == '${skill_id}']
+  exists=$(echo "$data" | SKILL_ID="$skill_id" json_query "
+skill_id = os.environ['SKILL_ID']
+matches = [s for s in data['skills'] if s['id'] == skill_id]
 print('yes' if matches else 'no')
 ")
 
@@ -201,18 +211,19 @@ print('yes' if matches else 'no')
   # Extract and write files
   mkdir -p "$target_dir"
 
-  echo "$data" | json_query "
-import os
-matches = [s for s in data['skills'] if s['id'] == '${skill_id}']
+  echo "$data" | SKILL_ID="$skill_id" SKILL_TARGET_DIR="$target_dir" json_query "
+skill_id = os.environ['SKILL_ID']
+target_dir = os.environ['SKILL_TARGET_DIR']
+matches = [s for s in data['skills'] if s['id'] == skill_id]
 s = matches[0]
 for f in s.get('files', []):
-    fpath = os.path.join('${target_dir}', f['path'])
+    fpath = os.path.join(target_dir, f['path'])
     os.makedirs(os.path.dirname(fpath), exist_ok=True)
     with open(fpath, 'w') as out:
         out.write(f['content'])
     print(f\"  \033[0;32m+\033[0m {f['path']}\")
 print()
-print(f\"  \033[1m{len(s.get('files', []))} file(s)\033[0m written to \033[0;36m${target_dir}/\033[0m\")
+print(f\"  \033[1m{len(s.get('files', []))} file(s)\033[0m written to \033[0;36m{target_dir}/\033[0m\")
 "
 
   echo ""
@@ -224,6 +235,7 @@ print(f\"  \033[1m{len(s.get('files', []))} file(s)\033[0m written to \033[0;36m
 cmd_remove() {
   local skill_id="${1:-}"
   [[ -z "$skill_id" ]] && die "Usage: gh skills remove <skill-name>"
+  validate_skill_id "$skill_id"
 
   local target_dir="${SKILLS_DIR}/${skill_id}"
   [[ ! -d "$target_dir" ]] && die "Skill '${skill_id}' is not installed (${target_dir}/ not found)."
